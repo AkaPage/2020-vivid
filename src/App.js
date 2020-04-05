@@ -1,10 +1,14 @@
 import React from 'react'
 
-import Container from './components/Container'
+import Header from './collections/Header'
+import Credit from './collections/Credit'
 
 const App = props => {
   return (
-    <Container />
+    <>
+      <Header />
+      <Credit />
+    </>
   )
 }
 

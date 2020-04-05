@@ -5,6 +5,12 @@ import App from './App'
 
 import * as serviceWorker from './serviceWorker'
 
+import 'normalize.css'
+import 'animate.css'
+import './styles/font.notoSansKR.css'
+import './styles/font.roboto.css'
+import './styles/sfe.default.css'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

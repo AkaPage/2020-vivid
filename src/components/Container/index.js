@@ -5,12 +5,12 @@ import { css } from 'glamor'
 const Container = props => {
   const styles = css({
     maxWidth: props.maxWidth || 800,
-    padding: '0 4px',
+    padding: '0 14px',
     margin: '0 auto'
   })
 
   return (
-    <div {...styles}>
+    <div {...styles} {...props}>
       {props.children}
     </div>
   )
