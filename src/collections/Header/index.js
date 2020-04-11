@@ -27,6 +27,7 @@ const Header = props => {
       background: 'black',
       height: '450px',
       minHeight: '350px',
+      maxHeight: '100vh',
       backgroundImage: `linear-gradient(${backgroundFilter.join(', ')}), url(${backgroundImage})`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
@@ -39,7 +40,6 @@ const Header = props => {
     }),
     coverTitle: css({
       color: '#DCDDDE',
-      padding: '55px 0',
       lineHeight: '2em'
     }),
     whiteFont: css({
@@ -58,18 +58,18 @@ const Header = props => {
           </Nav.Item>
           <Nav.Item right>
             <Link href='https://github.com/Seia-Soto' target='_blank'>
-              <FaGithub style={{ color: '#DCDDDE' }} />
+              <FaGithub style={{ color: '#DCDDDE', verticalAlign: 'bottom' }} />
             </Link>
           </Nav.Item>
           <Nav.Item right>
             <Link href='https://twitter.com/Seia_Soto' target='_blank'>
-              <FaTwitter style={{ color: '#DCDDDE' }} />
+              <FaTwitter style={{ color: '#DCDDDE', verticalAlign: 'bottom' }} />
             </Link>
           </Nav.Item>
         </Container>
       </Nav>
 
-      <Container {...styles.coverTitle} lang='ko'>
+      <Container lang='ko' {...styles.coverTitle}>
         <h1>
           소소한 웹 개발자.
         </h1>
