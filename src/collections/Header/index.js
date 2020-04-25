@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { css } from 'glamor'
 import {
   FaGithub,
-  FaTwitter
+  FaRegEnvelope
 } from 'react-icons/fa'
 
 import Container from '../../components/Container'
@@ -62,8 +62,8 @@ const Header = props => {
             </Link>
           </Nav.Item>
           <Nav.Item right>
-            <Link href='https://twitter.com/Seia_Soto' target='_blank'>
-              <FaTwitter style={{ color: '#DCDDDE', verticalAlign: 'bottom' }} />
+            <Link href='mailto:seia@outlook.kr'>
+              <FaRegEnvelope style={{ color: '#DCDDDE', verticalAlign: 'bottom' }} />
             </Link>
           </Nav.Item>
         </Container>
