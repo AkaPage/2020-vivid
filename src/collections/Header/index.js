@@ -11,7 +11,8 @@ import Link from '../../components/Link'
 import Nav from '../../components/Nav'
 
 import DefaultBackgroundImage from '../../images/background.jpeg'
-import AnimatedBackgroundImage from '../../images/backgroundAnimated.jpg'
+import SecondaryBackgroundImage from '../../images/backgroundSecondary.jpg'
+import OriginalBackgroundImage from '../../images/backgroundOriginal.jpg'
 
 const Header = props => {
   const backgroundFilter = props.backgroundFilter || [
@@ -20,8 +21,9 @@ const Header = props => {
   ]
   const backgroundImage = [
     DefaultBackgroundImage,
-    AnimatedBackgroundImage
-  ][Math.round(Math.random())]
+    SecondaryBackgroundImage,
+    OriginalBackgroundImage
+  ][Math.round(Math.random() * 2)]
   const styles = {
     cover: css({
       background: 'black',
