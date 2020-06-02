@@ -11,8 +11,8 @@ import Link from '../../components/Link'
 import Nav from '../../components/Nav'
 
 import DefaultBackgroundImage from '../../images/background.jpeg'
-import SecondaryBackgroundImage from '../../images/backgroundSecondary.jpg'
-import OriginalBackgroundImage from '../../images/backgroundOriginal.jpg'
+import SecondaryBackgroundImage from '../../images/backgroundSecondary_compressed.jpg'
+import OriginalBackgroundImage from '../../images/backgroundOriginal_compressed.jpg'
 
 const Header = props => {
   const backgroundFilter = props.backgroundFilter || [
@@ -50,7 +50,7 @@ const Header = props => {
   }
 
   return (
-    <div className='animated fadeIn slow' {...styles.cover}>
+    <div className='animate__animated animate__fadeIn slow' {...styles.cover}>
       <Nav>
         <Container>
           <Nav.Item primary >

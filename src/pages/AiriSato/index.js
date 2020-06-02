@@ -13,8 +13,8 @@ import Image from '../../components/Image'
 import Link from '../../components/Link'
 import Nav from '../../components/Nav'
 
-import backgroundImage from '../../images/AiriSato-background.jpg'
-import screenshotColors from '../../images/AiriSato-screenshot-color.png'
+import backgroundImage from '../../images/AiriSato-background_compressed.jpg'
+import screenshotColors from '../../images/AiriSato-screenshot-color_compressed.jpg'
 
 const Header = props => {
   const backgroundFilter = props.backgroundFilter || [
