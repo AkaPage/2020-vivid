@@ -15,12 +15,8 @@ const App = props => {
     <>
       <Router>
         <Switch>
-          <Route path='/airi-sato'>
-            <AiriSato />
-          </Route>
-          <Route path='/'>
-            <Header />
-          </Route>
+          <Route path='/airi-sato' component={AiriSato} />
+          <Route path='/' component={Header} />
         </Switch>
       </Router>
 
